@@ -1,5 +1,3 @@
-import{ Clima,ListaClimas} from "../interface/climas";
-
 export interface ClimaDia {
     id:number;
     nombre:string;
@@ -11,57 +9,55 @@ export interface ClimaDia {
 }
 
 export const ListaDias:Array<ClimaDia>=
-[ //Valparaiso
-  { id:1,
+[ //Araucania
+   { id:22,
     nombre:"Lunes",
     imagen:"img/Lluvioso.jpg",
-    gradosC:16,
-    gradosF:60.8,
-    clima:"Lluvioso",
+    gradosC:12,
+    gradosF:53.6,
+    clima:"Lluvioso"
   },
-  {  id:2,
+  {  id:23,
      nombre:"Martes",
      imagen:"img/Lluvioso.jpg",
-     gradosC:17,
-     gradosF:62.6,
-     clima:"Lluvioso",
+     gradosC:14,
+     gradosF:57.2,
+     clima:"Lluvioso"
    },
-   { id:3,
+   { id:24,
      nombre:"Miercoles",
      imagen:"img/Nublado.jpg",
-     gradosC:17,
-     gradosF:62.6,
-     clima:"Nublado",
+     gradosC:20,
+     gradosF:68,
+     clima:"Nublado"
    },
-   { id:4,
+   { id:25,
      nombre:"Jueves",
-     imagen:"img/Soleado.jpg",
+     imagen:"img/Nublado.jpg",
+     gradosC:19,
+     gradosF:66.2,
+     clima:"Nubladoo"
+   },
+   { id:26,
+     nombre:"Viernes",
+     imagen:"img/Lluvioso.jpg",
      gradosC:17,
      gradosF:62.6,
-     clima:"Soleado",
+     clima:"Lluvioso"
    },
-   { id:5,
-     nombre:"Viernes",
-     imagen:"img/Nublado.jpg",
-     gradosC:15,
-     gradosF:59,
-     clima:"Nublado",
-   },
-   { id:6,
+   { id:27,
      nombre:"Sábado",
      imagen:"img/Lluvioso.jpg",
-     gradosC:15,
-     gradosF:59,
+     gradosC:12,
+     gradosF:53.6,
      clima:"Lluvioso"
 
    },
-   { id:7,
+   { id:28,
      nombre:"Domingo",
      imagen:"img/Tormenta.jpg",
-     gradosC:14,
-     gradosF:57.2,
+     gradosC:13,
+     gradosF:55.4,
      clima:"Tormenta"
    },
-
 ];
-

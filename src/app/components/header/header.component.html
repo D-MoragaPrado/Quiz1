@@ -2,9 +2,9 @@
     <ul>
         <li><a [routerLink]="['/']" routerLinkActive="router-link-active"> <img src="assets/img/clima-icon.jfif"  class="img1"></a></li>
         <li><div id="clima">Clima </div> </li>
-        <li><div class="paisCiudad"><h4>Chile - 
-            <ng-container *ngIf="valpo">Valparaiso </ng-container>
-            <ng-container *ngIf="santiago"> Santiago</ng-container>
+        <li><div class="paisRegion"><h4>Chile - 
+            <ng-container *ngIf="valpo" >Valparaiso </ng-container>
+            <ng-container *ngIf="santiago">Metropolitana</ng-container>
             <ng-container *ngIf="biobio">Bio Bio </ng-container>
             <ng-container *ngIf="araucania">Araucania </ng-container>
             </h4>
@@ -16,11 +16,18 @@
     <nav>
         <ul>
             <a [routerLink]="['/']" routerLinkActive="router-link-active">
-            <button (click)="toggle1()">Valparaiso</button>
-            <button (click)="toggle2()">Metropolitana</button>
-            <button (click)="toggle3()">Bio Bio</button>
-            <button (click)="toggle4()">Araucania</button>
-        </a>
+                <button (click)="toggle1()" [ngClass]="{'gris' : normal1, 'black': !normal1}">Valparaiso</button>
+            </a> 
+            <a [routerLink]="['/clima-metropolitana']" routerLinkActive="router-link-active">
+                <button (click)="toggle2()" [ngClass]="{'gris' : normal2, 'black': !normal2}">Metropolitana</button>
+            </a>
+            <a [routerLink]="['/clima-bio-bio']" routerLinkActive="router-link-active">
+                <button (click)="toggle3()" [ngClass]="{'gris' : normal3, 'black': !normal3}">Bio Bio</button>
+            </a>
+            <a [routerLink]="['/clima-araucania']" routerLinkActive="router-link-active">
+                <button (click)="toggle4()" [ngClass]="{'gris' : normal4, 'black': !normal4}">Araucania</button>
+            </a>
+        
         </ul>
     </nav>
 </div>

@@ -7,6 +7,9 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ModificarClimaComponent } from './components/modificar-clima/modificar-clima.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ClimaMetropolitanaComponent } from './components/clima-metropolitana/clima-metropolitana.component';
+import { ClimaBioBioComponent } from './components/clima-bio-bio/clima-bio-bio.component';
+import { ClimaAraucaniaComponent } from './components/clima-araucania/clima-araucania.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeComponent,
     HeaderComponent,
     ModificarClimaComponent,
-    FooterComponent
+    FooterComponent,
+    ClimaMetropolitanaComponent,
+    ClimaBioBioComponent,
+    ClimaAraucaniaComponent
   ],
   imports: [
     BrowserModule,

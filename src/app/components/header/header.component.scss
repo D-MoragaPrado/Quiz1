@@ -17,7 +17,7 @@ div#encabezado{
     list-style-type: none;
     display:flex;
 }
-.paisCiudad{
+.paisRegion{
     margin-left:500px;
 }
 h2{
@@ -36,4 +36,11 @@ button{
 
 button:hover{
     color: rgb(211, 200, 200);
+}
+
+.black{
+    color:black;
+}
+.gris{
+    color:rgb(146, 143, 143);
 }

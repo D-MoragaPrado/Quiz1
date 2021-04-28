@@ -1,0 +1,21 @@
+<div id="eleccion">
+    <button id="Celsius" (click)="toggle1()" [ngClass]="{'red' : normal1, 'black': !normal1}">Celsius  </button>
+    <button id="Fahrenheit" (click)="toggle2()" [ngClass]="{'red' : normal2, 'black': !normal2}">Fahrenheit </button>
+</div>
+
+<ul id='dias'>   
+    <li *ngFor="let item of Semana">
+        <a [routerLink]="['/formulario']" routerLinkActive="router-link-active">  
+            <p>{{item.nombre}}</p>
+        <img src="/assets/{{item.imagen}}" class="imag2">
+        </a>
+        <ng-container *ngIf="show1">
+        <div id="gc"><p class='gradosC'>{{item.gradosC}} °C</p></div>
+        </ng-container> 
+        <ng-container *ngIf="show2">
+        <div id="gF"><p class='gradosF'>{{item.gradosF}} °F</p></div> 
+        </ng-container> 
+        <div><p>{{item.clima}}</p></div> 
+    </li>
+    
+</ul>

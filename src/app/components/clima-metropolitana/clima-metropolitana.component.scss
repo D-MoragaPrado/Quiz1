@@ -36,7 +36,6 @@ button:hover{
     color: rgb(211, 200, 200);
 
 }
-
 .black{
     color: black;
 }
@@ -44,4 +43,10 @@ button:hover{
 .red {
     color: rgb(133, 23, 23);
     font-weight: bold;
+}
+
+span{
+    position:static;
+    display: inline-block;
+
 }

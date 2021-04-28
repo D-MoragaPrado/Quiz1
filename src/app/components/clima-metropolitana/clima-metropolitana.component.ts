@@ -1,21 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import{ ClimaDia,ListaDias} from "../../interface/LaD";
+import{ ClimaDia,ListaDias} from "../../interface/LaDMetro";
+
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-clima-metropolitana',
+  templateUrl: './clima-metropolitana.component.html',
+  styleUrls: ['./clima-metropolitana.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class ClimaMetropolitanaComponent implements OnInit {
   Semana=ListaDias;
   public show1:boolean = true;
   public show2:boolean = false;
   normal1:boolean=true;
   normal2:boolean=false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
   toggle1() {
     if(this.show2){
       this.show1 = !this.show1;
@@ -33,4 +36,3 @@ export class HomeComponent implements OnInit {
     }
   }
 }
-

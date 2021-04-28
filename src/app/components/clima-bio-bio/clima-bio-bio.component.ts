@@ -1,17 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import{ ClimaDia,ListaDias} from "../../interface/LaD";
+import{ ClimaDia,ListaDias} from "../../interface/LaDBio";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-clima-bio-bio',
+  templateUrl: './clima-bio-bio.component.html',
+  styleUrls: ['./clima-bio-bio.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class ClimaBioBioComponent implements OnInit {
   Semana=ListaDias;
   public show1:boolean = true;
   public show2:boolean = false;
   normal1:boolean=true;
   normal2:boolean=false;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -33,4 +34,3 @@ export class HomeComponent implements OnInit {
     }
   }
 }
-
