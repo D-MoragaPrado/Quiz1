@@ -1,0 +1,39 @@
+div#clima{
+    color:black;
+    margin-top: 15px;
+    margin-left: 15px;
+    font: oblique 20px cursive;
+}
+.img1{
+    height: 50px;
+    width: 50px;
+}
+ul {
+    list-style-type: none;
+    display:flex;
+}
+div#encabezado{
+    width: 100%;
+    list-style-type: none;
+    display:flex;
+}
+.paisCiudad{
+    margin-left:500px;
+}
+h2{
+    padding:left;
+}
+nav ul li{
+    margin-left: 20px;
+}
+
+
+button{
+    border:0px;
+    padding:10px;
+    font-size:14px;
+}
+
+button:hover{
+    color: rgb(211, 200, 200);
+}
