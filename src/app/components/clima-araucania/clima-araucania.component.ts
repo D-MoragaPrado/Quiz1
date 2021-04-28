@@ -10,13 +10,14 @@ export class ClimaAraucaniaComponent implements OnInit {
   Semana=ListaDias;
   public show1:boolean = true;
   public show2:boolean = false;
-  normal1:boolean=true;
-  normal2:boolean=false;
+  normal1:boolean = true;
+  normal2:boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
   toggle1() {
     if(this.show2){
       this.show1 = !this.show1;

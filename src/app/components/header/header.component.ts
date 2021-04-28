@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Directive } from '@angular/core';
-import {HomeComponent} from "../home/home.component";
 
 @Component({
   selector: 'app-header',
@@ -71,5 +69,7 @@ export class HeaderComponent implements OnInit {
     this.normal4 = true;
   } 
 
-
+  restaurar(){
+    this.toggle1();
+  }
 }

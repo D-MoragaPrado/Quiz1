@@ -1,6 +1,6 @@
 <div id="encabezado">
     <ul>
-        <li><a [routerLink]="['/']" routerLinkActive="router-link-active"> <img src="assets/img/clima-icon.jfif"  class="img1"></a></li>
+        <li><a [routerLink]="['/']" routerLinkActive="router-link-active" (click)="restaurar()"> <img src="assets/img/clima-icon.jfif"  class="img1"></a></li>
         <li><div id="clima">Clima </div> </li>
         <li><div class="paisRegion"><h4>Chile - 
             <ng-container *ngIf="valpo" >Valparaiso </ng-container>

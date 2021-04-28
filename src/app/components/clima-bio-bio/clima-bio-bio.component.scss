@@ -17,7 +17,7 @@ ul#dias li a{
     text-align: center;
 }
 
-.imag2{
+.imag2{ //tamaño imagenes del clima
     height: 70px;
     width: 70px;
 }
@@ -36,6 +36,8 @@ button:hover{
     color: rgb(211, 200, 200);
 
 }
+
+//estilos para botones Celsius y Fahrenheit dependiendo el boton seleccionado
 .black{
     color: black;
 }
