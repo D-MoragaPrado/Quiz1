@@ -8,7 +8,6 @@ export interface ClimaDia {
     gradosF:number;
     clima:string;
     
-
 }
 
 export const ListaDias:Array<ClimaDia>=

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import{ ClimaDia,ListaDias} from "../../interface/LaD";
-
+let b1:any=document.getElementById("Celsius");
 
 @Component({
   selector: 'app-home',
@@ -18,15 +18,17 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
   toggle1() {
-    this.show1 = !this.show1;
-    this.show2 = !this.show2;
-    
-
+    if(this.show2){
+      this.show1 = !this.show1;
+      this.show2 = !this.show2;
+      b1.style.Color= "red";
+    }
   }
   toggle2() {
-    this.show2 = !this.show2;
-    this.show1 = !this.show1;
-    // CHANGE THE NAME OF THE BUTTON.
+    if(this.show1){
+      this.show2 = !this.show2;
+      this.show1 = !this.show1;
+    }
 
   }
 

@@ -1,3 +1,5 @@
+//asociar un id al nombre e imagen de un clima 
+
 export interface Clima {
     id:number;
     nombre:string;
